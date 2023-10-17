@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asterix", "Asterix\Asterix.csproj", "{A93AFD54-D211-40B7-932F-04E983BBE6DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A93AFD54-D211-40B7-932F-04E983BBE6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A93AFD54-D211-40B7-932F-04E983BBE6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A93AFD54-D211-40B7-932F-04E983BBE6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A93AFD54-D211-40B7-932F-04E983BBE6DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {904EE45C-72BA-4276-88F0-63B9E744A940}
+	EndGlobalSection
+EndGlobal
