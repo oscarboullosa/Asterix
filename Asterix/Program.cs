@@ -1,17 +1,42 @@
+using System;
+using System.IO;
+using System.Windows.Forms;
+
 namespace Asterix
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+            // Inicializa la configuración de la aplicación
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+
+            // Crea una instancia de Form1
+            Form1 form1 = new Form1();
+
+            // Muestra el formulario
+            Application.Run(form1);
+
+            // Accede a la propiedad FilePath después de cerrar el formulario
+            string filePath = form1.FilePath;
+
+            // Ahora puedes leer el contenido del archivo utilizando filePath
+            if (!string.IsNullOrEmpty(filePath))
+            {
+                try
+                {
+                    // Leer el contenido del archivo
+                    byte[] fileBytes = File.ReadAllBytes(filePath);
+
+                    // Llama al método en Form1 para mostrar el contenido en el TextBox
+                    form1.MostrarContenidoEnTextBox(fileBytes);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error al leer el archivo: " + ex.Message);
+                }
+            }
         }
     }
 }
